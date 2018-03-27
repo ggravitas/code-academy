@@ -1,9 +1,20 @@
+div {
+  border: 1px solid black;
+}
+
+body {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
 
 header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   display: flex;
+  width: 100%;
+  height: 80px;
   align-items: center;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
@@ -12,6 +23,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  flex-grow: 1;
   padding-left: 30px
 }
 
@@ -21,36 +33,29 @@ header {
 }
 
 header nav {
-  padding-left: 200px;
+  padding-right: 40px;
 }
 
 nav span {
   display: inline-block;
-  padding: 20px, 10px;
+  padding: 20px 10px;
 }
 
-.columns {
+.content {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+  margin-top: 20px;
 }
 
-.columns .large {
-  display: flex
-  flex-direction: column;
-
-}
-
-.large {
+.column.large {
   width: 630px;
 }
 
-.columns .medium {
-  display: flex;
+.column.medium {
   width: 300px;
 }
 
-.small {
-
+.column.small {
   width: 240px;
 }
