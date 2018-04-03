@@ -3,8 +3,12 @@ div {
 }
 
 body {
-  font-family: Georgia;
+  font-family: "Georgia", serif;
   font-size: 17px;
+  color: black;
+}
+
+a {
   color: black;
 }
 
@@ -18,6 +22,7 @@ header {
   align-items: center;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
+  font-family: "Verdana", sans-serif;
 }
 
 .logo {
@@ -25,6 +30,12 @@ header {
   align-items: center;
   flex-grow: 1;
   padding-left: 30px
+}
+
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
 }
 
 .logo span {
@@ -43,51 +54,86 @@ nav span {
 
 .content {
   display: flex;
-  justify-content: space-between;
-  margin-left: 30px;
-  margin-top: 20px;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 20px;
 }
 
-.column.large {
-  width: 630px;
-}
-
-.image-header {
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-
-.main .image-header {
-  background-image: url("./resources/img-story-main.png");
-  height: 300px;
-  font-size: 40px;
-}
-
-.earth .image-header {
-  background-image: url("./resources/img-story-2.png");
-  height: 300px;
-}
-
-.camera .image-header {
-  background-image: url("./resources/img-story-3.png");
-  height: 300px;
-}
-
-.cats .image-header {
-  background-image: url("./resources/img-story-1.png");
-  height: 300px;
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
 }
 
 .stories {
   display: flex;
   justify-content: space-between;
+  margin-top: 17px;
+}
+
+.stories .text {
+  height: 250px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.copy {
+  margin-top: 16px;
+}
+
+.image-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.column .large {
+  width: 630px;
+}
+
+.main .image-header {
+  background-image: url("./resources/img-story-main.png");
+  width: 630px;
+  font-size: 40px;
+}
+
+.earth {
+  background-image: url("./resources/img-story-2.png");
+}
+
+.camera  {
+  background-image: url("./resources/img-story-3.png");
 }
 
 .column.medium {
   width: 300px;
 }
 
+.cats {
+  background-image: url("./resources/img-story-1.png");
+}
+
 .column.small {
   width: 240px;
+}
+
+img.cookie {
+  height: 240px;
+}
+
+news-bites h3 {
+  margin-bottom: 41px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
