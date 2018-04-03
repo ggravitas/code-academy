@@ -1,0 +1,91 @@
+/* Universal Styles */
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  height: 69px;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid seashell;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+header nav {
+  padding-right: 10px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+a {
+  color: seashell;
+  text-decoration: underline;
+}
+
+/* Hero Styles */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mission-statement {
+  background-color: black;
+  opacity: 0.9;
+  margin-top: 300px;
+}
+
+h2, h3, h4 {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-image {
+  background-image: url("./resources/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  margin-top: 69px;
+}
+
+/* Content Styles */
+.content {
+  width: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.content img {
+  display: block;
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+.content h3, h4 {
+  text-align: center;
+}
+
+.content span {
+  display: block;
+  margin-top: 10px;
+}
