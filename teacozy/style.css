@@ -11,10 +11,12 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 1;
   height: 69px;
   width: 100%;
+  background-color: black;
+  opacity: 0.9;
   position: fixed;
   border-bottom: 1px solid seashell;
 }
@@ -24,13 +26,15 @@ header {
   margin-left: 10px;
 }
 
-header nav {
-  padding-right: 10px;
-}
-
 nav span {
   display: inline-block;
   padding: 20px 10px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+  margin-right: 10px;
 }
 
 a {
@@ -53,7 +57,7 @@ a {
   margin-top: 300px;
 }
 
-h2, h3, h4 {
+.hero h2, h3, h4 {
   margin: 0px;
   padding: 10px;
   text-align: center;
@@ -63,29 +67,90 @@ h2, h3, h4 {
   background-image: url("./resources/img-mission-background.jpg");
   width: 1200px;
   height: 700px;
-  margin-top: 69px;
+  margin: 69px 20px;
 }
 
 /* Content Styles */
-.content {
-  width: 1000px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+.headlines h2, h3, h4 {
+  display: block;
+  text-align: center;
+  margin: 0px;
 }
 
-.content img {
-  display: block;
+#content {
+  width: 1000px;
+  height: 600px;
+}
+
+.store  {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.store img {
   height: 200px;
   width: 300px;
   margin: 10px;
 }
 
-.content h3, h4 {
+.store span {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* locations Styles */
+.locations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.location-image {
+  background-image: url("./resources/img-locations-background.jpg");
+  width: 1200px;
+  height: 500px;
+  margin: 0px 20px;
+  padding-top: 50px;
+}
+
+.location-image h2 {
+  display: block;
   text-align: center;
 }
 
-.content span {
+.addresses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addresses div {
+  width: 300px;
+  margin: 15px 20px 0px;
+  background-color: black;
+  opacity: 1;
+}
+
+.addresses p {
+  text-align: center;
+}
+
+/* Footer Styles */
+
+.contact {
+  height: 200px;
+}
+
+.contact h2, h5 {
   display: block;
-  margin-top: 10px;
+  text-align: center;
+}
+
+.copyright h6 {
+  text-align: left;
+  margin-left: 20px;
 }
