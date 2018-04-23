@@ -68,6 +68,10 @@ nav li {
   padding: 0.75rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .items, .contact {
   display: flex;
   justify-content: space-between;
@@ -132,5 +136,37 @@ footer {
   }
   .item.glasses {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .items,
+  .containe {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    width: 90%;
+    margin: auto;
+  }
+
+  .item.watch {
+    display: none;
+  }
+
+  .containe {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
   }
 }
