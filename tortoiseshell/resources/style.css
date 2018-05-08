@@ -21,6 +21,12 @@ header {
   background-repeat: no-repeat;
 }
 
+header .banner {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
 .slogan {
   background-color: white;
   padding: 1.5rem 5rem;
@@ -31,12 +37,6 @@ header {
   line-height: 1.2;
   text-transform: uppercase;
   margin-right: -2rem;
-}
-
-header .banner {
-  display: flex;
-  justify-content: flex-end;
-
 }
 
 nav {
@@ -72,22 +72,132 @@ nav li {
   padding: 0 1rem;
 }
 
-.mobile-nav {
-  display: none;
-}
 
 .services {
-  margin-top: 3rem;
-  height: 8rem;
   display: flex;
-  max-width: 60%;
+  justify-content: center;
 }
 
-.services img.exams {
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.service img.exams {
     width: 3.5rem;
   }
 
-.services img {
+.service img {
   width: 5rem;
   margin-bottom: 1rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about h2 {
+  width: 10rem;
+  background-color: cadetblue;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+
+}
+
+.about p {
+  font-size: .9rem;
+  padding-top: 1rem;
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 561px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  header {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .slogan {
+    padding: .75rem 4rem;
+    width: 16rem;
+    font-size: 1.33rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .slogan {
+    padding: 1rem 0;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 6rem;
+  }
+
+  header {
+    height: 17rem;
+    padding-top: 0;
+  }
+
+.logo span {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+ul .mobile-nav {
+  display: block;
+  padding: 1rem 2rem 1rem 0;
+}
+
+.about {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.about h2 {
+  width: 100%;
+  font-size: .77rem;
+}
+
 }
